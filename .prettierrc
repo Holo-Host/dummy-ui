@@ -1,0 +1,11 @@
+{
+    "spaceBeforeFunctionParen": true,
+    "generatorStarSpacing": true,
+    "yieldStarSpacing": true,
+    "singleQuote": true,
+    "semi": false,
+    "jsxSingleQuote": true,
+    "bracketSameLine": true,
+    "arrowParens": "avoid",
+    "trailingComma": "none"
+}
