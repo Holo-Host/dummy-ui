@@ -17,6 +17,10 @@
     </div>
 
     <div>
+      <button @click="createLink">Create Link Holo</button>
+    </div>
+
+    <div>
       <input v-model="signalValue" />
       <button @click="sendSignal">Send Signal</button>
     </div>
@@ -65,11 +69,21 @@ export default {
       const result = await this.zomeCall({
         roleId: this.roleId,
         zomeName: "test",
+        fnName: "pass_obj",
+        payload
+      })
+
+      console.log('DUMMY UI: pass_obj zome call payload', payload, 'result', result)
+    },
+    async createLink () {
+      const result = await this.zomeCall({
+        roleId: this.roleId,
+        zomeName: "test",
         fnName: "create_link",
         payload: null
       })
 
-      console.log('DUMMY UI: pass_obj zome call payload', payload, 'result', result)
+      console.log('DUMMY UI: create_link zome call result', result)
     },
     async sendSignal () {
       const payload = {
