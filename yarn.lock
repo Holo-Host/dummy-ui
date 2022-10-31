@@ -972,8 +972,6 @@
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-3.1.6.tgz#68d935fa3eae7fdd5ab0d7f953f3205d8b2bfc29"
   integrity sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
-  dependencies:
-    "@hapi/hoek" "^8.3.0"
 
 "@holo-host/comb@^0.3.0":
   version "0.3.0"
@@ -983,8 +981,10 @@
     "@msgpack/msgpack" "^2.7.1"
     postmate "^1.5.1"
 
-"@holo-host/web-sdk@file:../web-sdk":
-  version "0.6.6-prerelease"
+"@holo-host/web-sdk@^0.6.8-prerelease":
+  version "0.6.8-prerelease"
+  resolved "https://registry.yarnpkg.com/@holo-host/web-sdk/-/web-sdk-0.6.8-prerelease.tgz#4a2b3911f7f81e9187d7cb9d1c0a23f0a9423f9e"
+  integrity sha512-mDfxf4LgX1Lk2oULmF70VD+BL8/wF9d/7yxH3qouebGSn30SkzrI/TNsqZfs19zeHVKp4Bm/FsjNfE++vcUhtg==
   dependencies:
     "@holo-host/comb" "^0.3.0"
 
@@ -7317,10 +7317,6 @@ schema-utils@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-1.0.0.tgz#0b79a93204d7b600d4b2850d1f66c2a34951c770"
   integrity sha512-i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==
-  dependencies:
-    ajv "^6.1.0"
-    ajv-errors "^1.0.0"
-    ajv-keywords "^3.1.0"
 
 schema-utils@^2.0.0, schema-utils@^2.5.0, schema-utils@^2.6.5, schema-utils@^2.7.0:
   version "2.7.1"

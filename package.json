@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@holo-host/web-sdk": "file:../web-sdk",
+    "@holo-host/web-sdk": "^0.6.8-prerelease",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vuex": "^4.0.2",

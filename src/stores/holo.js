@@ -30,7 +30,7 @@ export default {
             //     role: 'holofuel'
             //   }
             // },
-            skipRegistration: false
+            requireRegistrationCode: true
           }
         })
       } catch (e) {
@@ -77,10 +77,10 @@ export default {
     handleSignal (_, signal) {
       console.log('DUMMY UI: Got Signal', signal)
     },
-    async zomeCall ({ state }, args) {
+    async callZome ({ state }, args) {
       console.log('DUMMY UI ZOME CALL args', args)
       const { zomeName, fnName, payload } = args
-      const result = await client.zomeCall({
+      const result = await client.callZome({
         roleId: state.roleId,
         zomeName,
         fnName,

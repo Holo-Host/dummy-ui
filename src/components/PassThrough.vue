@@ -56,7 +56,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('holo', ['appInfo', 'signIn', 'signUp', 'signOut', 'zomeCall']),
+    ...mapActions('holo', ['appInfo', 'signIn', 'signUp', 'signOut', 'callZome']),
     async getAppInfo () {
       const appInfo = await this.appInfo()
       console.log('DUMMY UI: appInfo', appInfo)
@@ -66,7 +66,7 @@ export default {
         value: this.passThroughValue
       }
 
-      const result = await this.zomeCall({
+      const result = await this.callZome({
         roleId: this.roleId,
         zomeName: "test",
         fnName: "pass_obj",
@@ -76,7 +76,7 @@ export default {
       console.log('DUMMY UI: pass_obj zome call payload', payload, 'result', result)
     },
     async createLink () {
-      const result = await this.zomeCall({
+      const result = await this.callZome({
         roleId: this.roleId,
         zomeName: "test",
         fnName: "create_link",
@@ -90,7 +90,7 @@ export default {
         value: this.signalValue
       }
 
-      const result = await this.zomeCall({
+      const result = await this.callZome({
         roleId: this.roleId,
         zomeName: "test",
         fnName: "signal_loopback",
