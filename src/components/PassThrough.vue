@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3>Dummy UI: {{ isAvailable ? "Available" : "Unavailable" }}</h3>
 
     <div> Agent id: {{ agent.id }} </div>
     <div> Happ Id: {{ happId }} </div>
@@ -45,7 +46,7 @@
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex'
+import { mapActions, mapState, mapGetters } from 'vuex'
 export default {
   name: 'Passthrough',
   data () {
@@ -107,7 +108,8 @@ export default {
     }
   },
   computed: {
-    ...mapState('holo', ['agent', 'happId'])
+    ...mapState('holo', ['agent', 'happId']),
+    ...mapGetters('holo', ['isAvailable'])
   }
 }
 </script>
