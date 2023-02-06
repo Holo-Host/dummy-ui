@@ -56,9 +56,13 @@ export default {
 
       const app_info = await client.appInfo()
 
-      const {
-        cell_data: [{ role_id }]
-      } = app_info
+      const role_id = Object.keys(app_info.cell_info).sort()[0]
+
+      if (!role_id) {
+        throw new Error("No cells returned in AppInfo")
+      }
+
+      console.log('role_id', role_id)
 
       commit('setRoleId', role_id)
     },
