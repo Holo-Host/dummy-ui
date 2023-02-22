@@ -125,27 +125,42 @@
     "@msgpack/msgpack" "^2.7.1"
     postmate "^1.5.1"
 
-"@holo-host/web-sdk@../web-sdk/":
-  version "0.6.8-prerelease"
+"@holo-host/web-sdk@^0.6.9-prerelease":
+  version "0.6.9-prerelease"
+  resolved "https://registry.yarnpkg.com/@holo-host/web-sdk/-/web-sdk-0.6.9-prerelease.tgz#95ca0334da0b2341076c37a75e372518e2cfaa8c"
+  integrity sha512-Z4K64DXqWvuiF+EC4Xlv5OC3YGrTnEC5OubW7fgp4eYuu7CHZLhwEROWv2y6Pt8meocsc/SIFwC+qwa0Li9N8Q==
   dependencies:
     "@holo-host/comb" "^0.3.0"
-    "@holochain/client" "0.10.4"
+    "@holochain/client" "0.12.0"
 
-"@holochain/client@0.10.4":
-  version "0.10.4"
-  resolved "https://registry.yarnpkg.com/@holochain/client/-/client-0.10.4.tgz#7d9300d996231dce6c0d05cb4adb3c186a87ef9b"
-  integrity sha512-ujGhf6DXHKuNmCQIU1d4AYO6luiRnKL6sIpdsRavDjxo0L7igWwBh+9PX0UTj9qHu0jXkUSV1YnFGBLPJcj5hw==
+"@holochain/client@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@holochain/client/-/client-0.12.0.tgz#1c9bdc082160badd1439962e8d5f30da6c4089a3"
+  integrity sha512-pvrB6Gdc6488iR3VZXoq5QKzoAPTGi0y69Ktrtgr/IZEvtSSHBqHeMhyEjXCa7iS8b1gXsL/HAvq47rs8mu50A==
   dependencies:
+    "@holochain/serialization" "^0.1.0-beta-rc.3"
     "@msgpack/msgpack" "^2.7.2"
+    "@tauri-apps/api" "^1.2.0"
     emittery "^1.0.1"
     isomorphic-ws "^5.0.0"
+    js-base64 "^3.7.3"
     lodash-es "^4.17.21"
     tweetnacl "^1.0.3"
+
+"@holochain/serialization@^0.1.0-beta-rc.3":
+  version "0.1.0-beta-rc.3"
+  resolved "https://registry.yarnpkg.com/@holochain/serialization/-/serialization-0.1.0-beta-rc.3.tgz#787a785fa48e00f2d168c6d4b45a233c4800cccb"
+  integrity sha512-DJx4V2KXHVLciyOGjOYKTM/JLBpBEZ3RsPIRCgf7qmwhQdxXvhi2p+oFFRD51yUT5uC1/MzIVeJCl/R60PwFbw==
 
 "@msgpack/msgpack@^2.7.1", "@msgpack/msgpack@^2.7.2":
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/@msgpack/msgpack/-/msgpack-2.8.0.tgz#4210deb771ee3912964f14a15ddfb5ff877e70b9"
   integrity sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ==
+
+"@tauri-apps/api@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-1.2.0.tgz#1f196b3e012971227f41b98214c846430a4eb477"
+  integrity sha512-lsI54KI6HGf7VImuf/T9pnoejfgkNoXveP14pVV7XarrQ46rOejIVJLFqHI9sRReJMGdh2YuCoI3cc/yCWCsrw==
 
 "@vitejs/plugin-vue@^4.0.0":
   version "4.0.0"
@@ -318,6 +333,11 @@ isomorphic-ws@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/isomorphic-ws/-/isomorphic-ws-5.0.0.tgz#e5529148912ecb9b451b46ed44d53dae1ce04bbf"
   integrity sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==
+
+js-base64@^3.7.3:
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.7.5.tgz#21e24cf6b886f76d6f5f165bfcd69cc55b9e3fca"
+  integrity sha512-3MEt5DTINKqfScXKfJFrRbxkrnk2AxPWGBL/ycjz4dK8iqiSJ06UxD8jh8xuh6p10TX4t2+7FsBYVxxQbMg+qA==
 
 lodash-es@^4.17.21:
   version "4.17.21"
