@@ -10,7 +10,7 @@ export default {
     hasClient: false,
     agent: {},
     happId: null,
-    roleId: null
+    roleName: null
   },
   actions: {
     async init ({ dispatch, commit }) {
@@ -56,11 +56,14 @@ export default {
 
       const app_info = await client.appInfo()
 
-      const {
-        cell_data: [{ role_id }]
-      } = app_info
+      const role_names = Object.keys(app_info.cell_info)
+      if (role_names.length === 0 ) {
+        throw new Error('No cells found in appInfo')
+      }
 
-      commit('setRoleId', role_id)
+      const role_name = role_names.sort()[0] // arbitrarily choose the alphabetically first role id (should be 'test')    
+
+      commit('setRoleName', role_name)
     },
     async signIn () {
       await client.signIn()
@@ -79,11 +82,12 @@ export default {
     },
     async callZome ({ state }, args) {
       console.log('DUMMY UI ZOME CALL args', args)
-      const { zomeName, fnName, payload } = args
+
+      const { zome_name, fn_name, payload } = args
       const result = await client.callZome({
-        roleId: state.roleId,
-        zomeName,
-        fnName,
+        role_name: state.roleName,
+        zome_name,
+        fn_name,
         payload
       })
 
@@ -120,8 +124,8 @@ export default {
     setHappId (state, happId) {
       state.happId = happId
     },
-    setRoleId (state, roleId) {
-      state.roleId = roleId
+    setRoleName (state, roleName) {
+      state.roleName = roleName
     }
   },
   getters: {
