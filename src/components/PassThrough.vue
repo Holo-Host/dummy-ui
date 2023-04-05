@@ -53,7 +53,6 @@ export default {
     return {
       passThroughValue: "",
       signalValue: "",
-      roleId: null
     }
   },
   methods: {
@@ -68,9 +67,8 @@ export default {
       }
 
       const result = await this.callZome({
-        roleId: this.roleId,
-        zomeName: "test",
-        fnName: "pass_obj",
+        zome_name: "test",
+        fn_name: "pass_obj",
         payload
       })
 
@@ -78,9 +76,8 @@ export default {
     },
     async createLink () {
       const result = await this.callZome({
-        roleId: this.roleId,
-        zomeName: "test",
-        fnName: "create_link",
+        zome_name: "test",
+        fn_name: "create_link",
         payload: null
       })
 
@@ -92,9 +89,8 @@ export default {
       }
 
       const result = await this.callZome({
-        roleId: this.roleId,
-        zomeName: "test",
-        fnName: "signal_loopback",
+        zome_name: "test",
+        fn_name: "signal_loopback",
         payload
       })
 
