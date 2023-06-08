@@ -40,7 +40,7 @@ export default {
 
       commit('setHasClient', true)
 
-      commit('setAgent', client.agent)
+      commit('setAgent', client.agentState)
       commit('setHappId', client.happId)
 
       client.on('agent-state', agent_state => {
