@@ -22,6 +22,14 @@
     </div>
 
     <div>
+      <button @click="createPublicEntry">Create Public Entry</button>
+    </div>
+
+    <div>
+      <button @click="createPrivateEntry">Create Private Entry</button>
+    </div>
+
+    <div>
       <input v-model="signalValue" />
       <button @click="sendSignal">Send Signal</button>
     </div>
@@ -82,6 +90,32 @@ export default {
       })
 
       console.log('DUMMY UI: create_link zome call result', result)
+    },
+    async createPublicEntry () {
+      const payload = {
+        value: this.passThroughValue        
+      }
+
+      const result = await this.callZome({
+        zome_name: "test",
+        fn_name: "create_public_entry",
+        payload
+      })
+
+      console.log('DUMMY UI: create_public_entry zome call result', result)
+    },
+    async createPrivateEntry () {
+      const payload = {
+        value: this.passThroughValue        
+      }
+
+      const result = await this.callZome({
+        zome_name: "test",
+        fn_name: "create_private_entry",
+        payload
+      })
+
+      console.log('DUMMY UI: create_private_entry zome call result', result)
     },
     async sendSignal () {
       const payload = {
