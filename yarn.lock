@@ -125,8 +125,10 @@
     "@msgpack/msgpack" "^2.7.1"
     postmate "^1.5.1"
 
-"@holo-host/web-sdk@../web-sdk/":
-  version "0.6.13-prerelease"
+"@holo-host/web-sdk@^0.6.14-prerelease":
+  version "0.6.14-prerelease"
+  resolved "https://registry.yarnpkg.com/@holo-host/web-sdk/-/web-sdk-0.6.14-prerelease.tgz#cb4e5a91235319c5a4d00b38cbe3d864a3e38498"
+  integrity sha512-i8WgPapWcRQN3dW1Yov3ObnF0MX4L5RX9PclCED2FoayP52a2+2o9uQSpJlg9kYAL0gtwAEUyku8iktmXH0xOg==
   dependencies:
     "@holo-host/comb" "^0.3.0"
     "@holochain/client" "0.14.1"
