@@ -125,28 +125,29 @@
     "@msgpack/msgpack" "^2.7.1"
     postmate "^1.5.1"
 
-"@holo-host/web-sdk@^0.6.12-prerelease":
-  version "0.6.12-prerelease"
-  resolved "https://registry.yarnpkg.com/@holo-host/web-sdk/-/web-sdk-0.6.12-prerelease.tgz#3d7d05bb8f889ddc402a69377fdc3575b370de55"
-  integrity sha512-5ThKp/GrvXIo0goEIx3YzNMxKhx9DrjpQLHzGxsZBi/D7yKiJWMrQidZ08bfD0Rnp2hAaR/+BCowmXzzhNbJsQ==
+"@holo-host/web-sdk@^0.6.15-prerelease":
+  version "0.6.15-prerelease"
+  resolved "https://registry.yarnpkg.com/@holo-host/web-sdk/-/web-sdk-0.6.15-prerelease.tgz#acfc14fd4798eae01e8cb1e1035c440cbb2fadec"
+  integrity sha512-48TS4IaszWrzsLgeGyceUlOD5Pklhw3yxdjqeEPXYhKam66H2wUmGBLCcqAWzlm4u4dKbAKou+fonBELqUkncA==
   dependencies:
     "@holo-host/comb" "^0.3.0"
-    "@holochain/client" "0.12.0"
+    "@holochain/client" "0.14.1"
     semver "^7.5.1"
 
-"@holochain/client@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@holochain/client/-/client-0.12.0.tgz#1c9bdc082160badd1439962e8d5f30da6c4089a3"
-  integrity sha512-pvrB6Gdc6488iR3VZXoq5QKzoAPTGi0y69Ktrtgr/IZEvtSSHBqHeMhyEjXCa7iS8b1gXsL/HAvq47rs8mu50A==
+"@holochain/client@0.14.1":
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/@holochain/client/-/client-0.14.1.tgz#80cd8757bfdd1bf6b896c1a91bce060278f74c2e"
+  integrity sha512-5rWPIRdxhvV+SpKHegKsPSw7AcN1JjtLS5RhAlLT7dsXvn70BcMWsImhBs1sqw69QsbEMKlhqaOH+sOS5LkDBQ==
   dependencies:
     "@holochain/serialization" "^0.1.0-beta-rc.3"
     "@msgpack/msgpack" "^2.7.2"
+    "@noble/ed25519" "^2.0.0"
     "@tauri-apps/api" "^1.2.0"
     emittery "^1.0.1"
     isomorphic-ws "^5.0.0"
     js-base64 "^3.7.3"
     lodash-es "^4.17.21"
-    tweetnacl "^1.0.3"
+    ws "^8.13.0"
 
 "@holochain/serialization@^0.1.0-beta-rc.3":
   version "0.1.0-beta-rc.3"
@@ -158,10 +159,15 @@
   resolved "https://registry.yarnpkg.com/@msgpack/msgpack/-/msgpack-2.8.0.tgz#4210deb771ee3912964f14a15ddfb5ff877e70b9"
   integrity sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ==
 
+"@noble/ed25519@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@noble/ed25519/-/ed25519-2.0.0.tgz#5964c8190a4b4b804985717ca566113b93379e43"
+  integrity sha512-/extjhkwFupyopDrt80OMWKdLgP429qLZj+z6sYJz90rF2Iz0gjZh2ArMKPImUl13Kx+0EXI2hN9T/KJV0/Zng==
+
 "@tauri-apps/api@^1.2.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-1.3.0.tgz#d0c853ab2cc7506bd826c5f7f260c67c7c15def5"
-  integrity sha512-AH+3FonkKZNtfRtGrObY38PrzEj4d+1emCbwNGu0V2ENbXjlLHMZQlUh+Bhu/CRmjaIwZMGJ3yFvWaZZgTHoog==
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-1.4.0.tgz#b4013ca3d17b853f7df29fe14079ebb4d52dbffa"
+  integrity sha512-Jd6HPoTM1PZSFIzq7FB8VmMu3qSSyo/3lSwLpoapW+lQ41CL5Dow2KryLg+gyazA/58DRWI9vu/XpEeHK4uMdw==
 
 "@vitejs/plugin-vue@^4.0.0":
   version "4.0.0"
@@ -405,9 +411,9 @@ rollup@^3.7.0:
     fsevents "~2.3.2"
 
 semver@^7.5.1:
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.1.tgz#c90c4d631cf74720e46b21c1d37ea07edfab91ec"
-  integrity sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==
+  version "7.5.4"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
+  integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
   dependencies:
     lru-cache "^6.0.0"
 
@@ -430,11 +436,6 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
-
-tweetnacl@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
-  integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
 
 vite@^4.0.0:
   version "4.0.4"
@@ -465,6 +466,11 @@ vuex@^4.1.0:
   integrity sha512-hmV6UerDrPcgbSy9ORAtNXDr9M4wlNP4pEFKye4ujJF8oqgFFuxDCdOLS3eNoRTtq5O3hoBDh9Doj1bQMYHRbQ==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.11"
+
+ws@^8.13.0:
+  version "8.14.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.14.0.tgz#6c5792c5316dc9266ba8e780433fc45e6680aecd"
+  integrity sha512-WR0RJE9Ehsio6U4TuM+LmunEsjQ5ncHlw4sn9ihD6RoJKZrVyH9FWV3dmnwu8B2aNib1OvG2X6adUCyFpQyWcg==
 
 yallist@^4.0.0:
   version "4.0.0"
