@@ -13,7 +13,7 @@ export default {
     roleName: null
   },
   actions: {
-    async init ({ dispatch, commit }) {
+    async init ({ dispatch, commit }, container) {
       try {
         client = await WebSdk.connect({
           chaperoneUrl: 'http://localhost:24274',
@@ -24,6 +24,8 @@ export default {
             logoUrl:
               'https://upload.wikimedia.org/wikipedia/en/a/a0/Grogu_%28Star_Wars%29.jpg',
             infoLink: 'https://holo.host/faq-tag/elemental-chat',
+            container,
+            cssUrl: "http://localhost:8787/public/login.css",
             // membraneProofServer: {
             //   url: 'https://holo-registration-service.holo.host',
             //   payload: {

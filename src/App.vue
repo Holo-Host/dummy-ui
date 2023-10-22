@@ -1,5 +1,8 @@
 <template>
   <PassThrough  />
+  <div style="display: flex; justify-content: center; align-items: center; height: 400px">
+    <div ref="holoContainer" style="width: 80%; height: 100%; background: none transparent; border: none;"></div>
+  </div>
 </template>
 
 <script>
@@ -15,7 +18,7 @@ export default {
     console.log('import.meta.env.VITE_INTEGRATION_TEST_MODE', import.meta.env.VITE_INTEGRATION_TEST_MODE)
     // In integration test mode we don't initialize because the test is responsible for making web sdk calls
     if (!import.meta.env.VITE_INTEGRATION_TEST_MODE) {
-      this.init()
+      this.init(this.$refs.holoContainer)
     }
   },
   methods: {

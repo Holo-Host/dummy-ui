@@ -117,20 +117,16 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.16.14.tgz#90558dcb279989d92a42e5be4dfb884b2399361f"
   integrity sha512-ED1UpWcM6lAbalbbQ9TrGqJh4Y9TaASUvu8bI/0mgJcxhSByJ6rbpgqRhxYMaQ682WfA71nxUreaTO7L275zrw==
 
-"@holo-host/comb@^0.3.0":
+"@holo-host/comb@file:../cross-origin-message-bus":
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@holo-host/comb/-/comb-0.3.0.tgz#d87c2043eafbc5e2dd80d48f231f9a4df77f3164"
-  integrity sha512-Ksqh3Gukf/NFI7hzs7tZwnCG4IADisahdWktLpgXdt5y283Ha4uncEIvkjVcP1YSP07Rhq5Ht+JPgDIlwvvT5w==
   dependencies:
     "@msgpack/msgpack" "^2.7.1"
     postmate "^1.5.1"
 
-"@holo-host/web-sdk@^0.6.15-prerelease":
+"@holo-host/web-sdk@file:../web-sdk":
   version "0.6.15-prerelease"
-  resolved "https://registry.yarnpkg.com/@holo-host/web-sdk/-/web-sdk-0.6.15-prerelease.tgz#acfc14fd4798eae01e8cb1e1035c440cbb2fadec"
-  integrity sha512-48TS4IaszWrzsLgeGyceUlOD5Pklhw3yxdjqeEPXYhKam66H2wUmGBLCcqAWzlm4u4dKbAKou+fonBELqUkncA==
   dependencies:
-    "@holo-host/comb" "^0.3.0"
+    "@holo-host/comb" "file:../../../../.cache/yarn/v6/npm-@holo-host-web-sdk-0.6.15-prerelease-44b883f4-9ae5-4c02-9686-cf792042e5d0-1698012732158/node_modules/@holo-host/cross-origin-message-bus"
     "@holochain/client" "0.14.1"
     semver "^7.5.1"
 
