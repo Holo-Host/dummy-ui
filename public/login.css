@@ -1,0 +1,60 @@
+body {
+  background: none transparent !important;
+}
+
+.auth-form {
+  box-shadow: none !important;
+  border-radius: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+.auth-form .close-button {
+}
+.auth-form .logo {
+  display: none;
+}
+.auth-form .app-name {
+  display: none;
+}
+.auth-form .create-credentials {
+}
+
+.auth-form form {
+  width: 100% !important;
+}
+.auth-form form .form-field label {
+}
+.auth-form form .form-field input {
+}
+
+.auth-form form #submit-button {
+}
+
+.auth-form form .toggle-row {
+}
+.auth-form form .toggle-row .toggle-button {
+}
+
+
+.footer {
+  color: white !important;
+}
+.footer a {
+  color: blue !important;
+}
+.footer .hosted-by {
+
+}
+.footer .logo-row {
+
+}
+.footer .reminder {
+
+}
+.footer .reminder {
+
+}
+.footer .version {
+
+}
